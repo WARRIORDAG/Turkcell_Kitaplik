@@ -12,6 +12,8 @@ namespace Turkcell_Kitaplik
     {
         static void Main(string[] args)
         {
+            
+
             int toplamfiyat = 0;    // birden fazla kitap almak istediklerinde kitap + toplam fiyat yapacağım   
             string secim;           // 5. basamakta seçeceğimiz kitabın numarası için değişken tanımladım!!
 
