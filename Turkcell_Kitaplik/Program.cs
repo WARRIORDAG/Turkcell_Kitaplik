@@ -35,19 +35,19 @@ namespace Turkcell_Kitaplik
             Console.Write("Yapmak istediğiniz işlemin numarası: ");
 
             char islem;     // değişken türü char 1 ile 6 arasında olduğu için!!
-            islem = Convert.ToChar(Console.ReadLine());     // kullanıcıdan aldığım değeri chara çevireceğim çünkü işlem değişkenini char yaptım
+            islem = Convert.ToChar(Console.ReadLine());     // kullanıcıdan aldığım değeri chara çevireceğim çünkü işlem değişkenini char yaptım    önce if bloklarını tamamladım sonra içini doldurmaya başladım
 
             if (islem == '1')       // char değeri olduğu için tek tırnak kullandım???
             {
                 Console.WriteLine();
-                Console.Write("İşlem: Lütfen Fiyatını öğrenmek istediğiniz kitabın numarasını giriniz");
+                Console.Write("İşlem: Lütfen Fiyatını öğrenmek istediğiniz kitabın numarasını giriniz: ");
                 
-                string numara;
-                numara = Console.ReadLine();
+                string numara;      // kitapların numarasını tutacak değişken!!
+                numara = Console.ReadLine();    // klavyeden girilen değeri de numaraya atadım!!
                 
                 switch (numara)
                 {
-                    case "1": Console.Write("Çalıkuşu: 12 TL"); 
+                    case "1": Console.Write("Çalıkuşu: 12 TL");     //kullanıcı 1 yazarsa bunu yazdıracak
                         break;
                     case "2":
                         Console.Write("Yaban: 14 TL");
@@ -61,9 +61,14 @@ namespace Turkcell_Kitaplik
                     case "5":
                         Console.Write("Geçtiğim Günlerden: 8 TL");
                         break;
-                    case "6":
-                        Console.Write("Kuyucaklı Yusuf: 13 TL");
-                        break;
+                    case "6": Console.Write("Kuyucaklı Yusuf: 13 TL"); break;     // bu şekilde de yazabilirim
+
+                    case "7": Console.Write("Tuna Kılavuzu: 13 TL"); break;
+                    case "8": Console.Write("Bir Kuzey Macerası: 12 TL"); break;
+                    case "9": Console.Write("Altıncı Koğuş: 18 TL"); break;
+                    case "10": Console.Write("kumarbaz: 13 TL"); break;
+                    case "11": Console.Write("İki Şehrin Hikayesi: 22 TL"); break;
+                    case "12": Console.Write("Vişne Bahçesi: 9 TL"); break;
                 }
 
             }   
